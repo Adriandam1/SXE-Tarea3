@@ -32,6 +32,12 @@ docker container create -i -t --name dam_web1 httpd:2.4
 ## 3. Si quieres poder acceder desde el navegador de tu equipo, ¿que debes hacer?
 Utiliza bind mount para que el directorio del apache2 'htdocs' esté montado un directorio que tu elijas.
 ```bash
+$ docker run -p 8080:80 -v /home/miusuario/miCarpeta:/usr/local/apache2/htdocs
+--name miserver httpd
+
+docker run -p 8080:80 -v /home/adrian/miCarpeta/htdocs:/usr/local/apache2/htdocs --name dam_web1 httpd:2.4
+
+docker run -p 8080:80 -v <ruta_donde_crearemos>:<ruta dentro del contenedor> --name <nombre_contenedor> <nombre_imagen>
 ```
 
 ## 4. Realiza un 'hola mundo' en html y comprueba que accedes desde el navegador.
