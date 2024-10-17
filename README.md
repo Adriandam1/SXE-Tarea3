@@ -62,17 +62,37 @@ docker run -d --name dam_webPrueba2 -p 9000:80 -v /home/adrian/miCarpeta:/usr/lo
 ```
 
 ## 6. Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador:
-http://localhost:9080 
+**http://10.0.9.154:8000/HolaMundo.html**
 
-http://localhost:8000
-```bash
+**http://10.0.9.154:9000/HolaMundo.html**
 
-```
+Comprobamos que el segundo es exactamente igual que el primero, aunque hemos cambiado el puerto de acceso:
+![holamundo2](https://github.com/user-attachments/assets/ea7235c1-833e-4ee6-bd4f-3473238c068f)
+
 
 ## 7. Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página
 ```bash
-
+  GNU nano 7.2                                            HolaMundo.html                                                      
+ <html>
+     <head>
+         <title>Hola Mundo</title>
+     </head>
+     <body>
+         <h1>Hola Mundo</h1>
+<br>
+Estamos usando el contenedor de dam_webPrueba1
+<br>
+Ahora hago una modificacion!
+     </body>
+ </html>
 ```
+![htmlmodificado](https://github.com/user-attachments/assets/a2d49dc4-e869-4fac-83fb-1140aa3d49a4)
+
+Comprobamos refrescando las páginas que la modificación a afectado a ambas:
+
+![holamundo1_modificado](https://github.com/user-attachments/assets/598324a1-24bc-403d-8fe5-13200fbec16c) ![holamundo2_modificado](https://github.com/user-attachments/assets/aac05e99-634a-4138-9651-53aa6712f638)
+
+
 
 
 
