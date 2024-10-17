@@ -90,7 +90,8 @@ Ahora hago una modificacion!
 
 Comprobamos refrescando las páginas que la modificación a afectado a ambas:
 
-![holamundo1_modificado](https://github.com/user-attachments/assets/598324a1-24bc-403d-8fe5-13200fbec16c) ![holamundo2_modificado](https://github.com/user-attachments/assets/aac05e99-634a-4138-9651-53aa6712f638)
+![holamundo1_modificado](https://github.com/user-attachments/assets/598324a1-24bc-403d-8fe5-13200fbec16c) ![holamundo2_modificado](https://github.com/user-attachments/assets/c7a394ee-3270-4518-884f-11b1a10a82c4)
+
 
 
 
