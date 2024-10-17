@@ -28,17 +28,16 @@ docker container create -i -t --name dam_web1 httpd:2.4
 ![TAREA3-2](https://github.com/user-attachments/assets/71edbffe-7b2c-498f-90ff-b2581e715b57)
 
 
-
 ## 3. Si quieres poder acceder desde el navegador de tu equipo, ¿que debes hacer?
 Utiliza bind mount para que el directorio del apache2 'htdocs' esté montado un directorio que tu elijas.
 ```bash
 docker run -d --name dam_webPrueba1 -p 8000:80 -v /home/adrian/miCarpeta:/usr/local/apache2/htdocs httpd:2.4
 ```
 
+## 4. Realiza un 'hola mundo' en html y comprueba que accedes desde el navegador.
+Una vez instalado el **SSH** que necesitaremos para hacer la prueba: 
 
-
-
-Ahora crearemos nuestro HolaMundo.html dentro de nuestra ruta /home/adrian/miCarpeta:
+Ahora crearemos nuestro **HolaMundo.html** dentro de nuestra ruta **/home/adrian/miCarpeta**(el directorio se creo durante el comando del punto3):
 ```bash
  <html>
      <head>
@@ -52,22 +51,6 @@ Ahora crearemos nuestro HolaMundo.html dentro de nuestra ruta /home/adrian/miCar
 Y por último comprobamos con nuestro navegador web, introduciendo nuestra IP que hemos sacado con **ip a** y utilizando el puerto que hemos asignado **8000**
 En este caso: **http://10.0.9.154:8000/HolaMundo.html**
 
-
-
-
-docker run -p 8080:80 -v /home/adrian/miCarpeta/htdocs:/usr/local/apache2/htdocs --name dam_webPrueba httpd:2.4
-
-docker run -d --name dam_webPrueba1 -p 8000:80 -v /home/adrian/miCarpeta:/usr/local/apache2/htdocs httpd:2.4
-
-
-docker run -p 8080:80 -v <ruta_donde_crearemos>:<ruta dentro del contenedor> --name <nombre_contenedor> <nombre_imagen>
-```
-
-## 4. Realiza un 'hola mundo' en html y comprueba que accedes desde el navegador.
-Una vez instalado el **SSH** que usaremos para hacer la prueba: 
-```bash
-
-```
 
 ## 5. Crea otro contenedor 'dam_web2' con el mismo bind mount y a otro puerto, por ejemplo 9080.
 ```bash
