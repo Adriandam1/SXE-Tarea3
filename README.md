@@ -51,8 +51,7 @@ Ahora crearemos nuestro **HolaMundo.html** dentro de nuestra ruta **/home/adrian
 Y por último comprobamos con nuestro navegador web, introduciendo nuestra IP que hemos sacado con **ip a** y utilizando el puerto que hemos asignado **8000**
 En este caso: **http://10.0.9.154:8000/HolaMundo.html**
 
-![holamundo](https://github.com/user-attachments/assets/c4c40c8c-2a84-4c6f-9d2a-aaf9873e4f9e)
-
+![Tarea3-4](https://github.com/user-attachments/assets/c2cf4859-c67b-4df1-9dad-9a7272a9efca)
 
 
 
@@ -67,7 +66,8 @@ docker run -d --name dam_webPrueba2 -p 9000:80 -v /home/adrian/miCarpeta:/usr/lo
 **http://10.0.9.154:9000/HolaMundo.html**
 
 Comprobamos que el segundo es exactamente igual que el primero, aunque hemos cambiado el puerto de acceso:
-![holamundo2](https://github.com/user-attachments/assets/ea7235c1-833e-4ee6-bd4f-3473238c068f)
+
+![tarea3-6](https://github.com/user-attachments/assets/70bc9945-cf4b-4055-a32d-216ef676973c)
 
 
 ## 7. Realiza modificaciones de la página y comprueba que los dos servidores 'sirven' la misma página
@@ -90,7 +90,9 @@ Ahora hago una modificacion!
 
 Comprobamos refrescando las páginas que la modificación a afectado a ambas:
 
-![holamundo1_modificado](https://github.com/user-attachments/assets/598324a1-24bc-403d-8fe5-13200fbec16c) ![holamundo2_modificado](https://github.com/user-attachments/assets/c7a394ee-3270-4518-884f-11b1a10a82c4)
+![tarea3-72](https://github.com/user-attachments/assets/5e94310a-a6e3-45ea-8dc3-a2ddeeacc054) ![tarea3-73](https://github.com/user-attachments/assets/3653304d-094c-4c2f-a206-ced6b4d1f27f)
+
+
 
 
 
