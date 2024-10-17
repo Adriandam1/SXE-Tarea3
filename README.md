@@ -51,10 +51,14 @@ Ahora crearemos nuestro **HolaMundo.html** dentro de nuestra ruta **/home/adrian
 Y por último comprobamos con nuestro navegador web, introduciendo nuestra IP que hemos sacado con **ip a** y utilizando el puerto que hemos asignado **8000**
 En este caso: **http://10.0.9.154:8000/HolaMundo.html**
 
+![holamundo](https://github.com/user-attachments/assets/c4c40c8c-2a84-4c6f-9d2a-aaf9873e4f9e)
+
+
+
 
 ## 5. Crea otro contenedor 'dam_web2' con el mismo bind mount y a otro puerto, por ejemplo 9080.
 ```bash
-
+docker run -d --name dam_webPrueba2 -p 9000:80 -v /home/adrian/miCarpeta:/usr/local/apache2/htdocs httpd:2.4
 ```
 
 ## 6. Comprueba que los dos servidores 'sirven' la misma página, es decir, cuando consultamos en el navegador:
