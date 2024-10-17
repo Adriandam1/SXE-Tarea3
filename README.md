@@ -1,6 +1,16 @@
 # Tarea 2
 
-**A continuación realizo las operaciones de la tarea:**
+La siguiente práctica es una lista de tareas que tenéis que hacer. 
+
+Por cada tarea tenéis que ir poniendo los comandos utilizados y, brevemente, describir el proceso y como compruebas que se ha realizado lo pedido en un fichero (nombre "Readme.md") con formato markdown.
+
+Crear un repositorio en github para subir este fichero
+
+Cada dos apartados tenéis que hacer un commit nombrando el numero del apartado
+
+En la respuesta pon el enlace a tu repositorio en github
+
+Utiliza la imagen de **Apache**, tag 2.4 y apoyandote en la **mini guía** de docker sigue las instrucciones:
 
 ---
 ## 1. Descarga la imagen 'httpd' y comprueba que está en tu equipo.
